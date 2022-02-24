@@ -22,6 +22,11 @@ debug
     background-color: blue;
 }
 
+.debug #site-main .medium .container-lg {
+    height: 600px;
+}
+
+
 .debug #site-main .container-md {
     height: 100%;
     background-color: red;
@@ -68,6 +73,17 @@ debug
     height: 300px;
 }
 
+.debug #site-main .medium .col-30,
+.debug #site-main .medium .col-40,
+.debug #site-main .medium .col-50 {
+    height: 50vh;
+    background-color: lightpink;
+}
+
+.debug #site-main .lower .container-sm {
+    height: 500px;
+}
+
 /*****
 common
 ******/
@@ -111,6 +127,10 @@ utility
     width: 50%;
 }
 
+.col-40 {
+    width: 40%;
+}
+
 .col-30 {
     width: 30%;
 }
@@ -145,6 +165,7 @@ site-main
 
 #site-main .col-30, 
 #site-main .col-100, 
-#site-main .col-50 {
+#site-main .col-50,
+#site-main .col-40 {
     float: left;
 }
