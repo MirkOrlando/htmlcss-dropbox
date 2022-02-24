@@ -32,6 +32,11 @@ debug
     background-color: red;
 }
 
+.debug #site-footer .container-md {
+    height: 200px;
+    background-color: red;
+}
+
 .debug #site-main .container-sm {
     background-color: lightgreen;
 }
@@ -84,6 +89,11 @@ debug
     height: 500px;
 }
 
+.debug #site-footer .col-20 {
+    height: 300px;
+    background-color: lightpink;
+}
+
 /*****
 common
 ******/
@@ -119,6 +129,14 @@ utility
     clear: both;
 }
 
+.col-30, 
+.col-100, 
+.col-50,
+.col-40,
+.col-20 {
+    float: left;
+}
+
 .col-100 {
     width: 100%;
 }
@@ -135,6 +153,10 @@ utility
     width: 30%;
 }
 
+.col-20 {
+    width: 20%;
+}
+
 .p-relative {
     position: relative;
 }
@@ -145,6 +167,10 @@ utility
 
 .w-100 {
     width: 100%;
+}
+
+.bb-1 {
+    border-bottom: 1px solid white;
 }
 
 /* * [class^="col"] {
@@ -163,9 +189,8 @@ site-header
 site-main
 *********/
 
-#site-main .col-30, 
-#site-main .col-100, 
-#site-main .col-50,
-#site-main .col-40 {
-    float: left;
-}
+
+/**********
+site-footer
+***********/
+
