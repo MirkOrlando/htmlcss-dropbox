@@ -9,7 +9,7 @@ debug
 
 .debug #site-header .col-50 {
     height: 100%;
-    background-color: yellow;    
+    background-color: lightpink;    
 }
 
 .debug #site-header .nav-bar {
@@ -27,6 +27,21 @@ debug
     background-color: red;
 }
 
+.debug #site-main .text-business {
+    height: 100px;
+    background-color: aqua;
+}
+
+.debug #site-main .col-30 {
+    height: 100vh;
+    background-color: lightpink;
+}
+
+.debug #site-main .col-100 {
+    height: 100px;
+    background-color: lightpink;
+}
+
 /*****
 common
 ******/
@@ -37,9 +52,10 @@ common
     box-sizing: border-box;
 }
 
-.container-lg {
+/* body {
     min-width: 1440px;
 }
+ */
 
 .container-md {
     width: 1200px;
@@ -48,6 +64,7 @@ common
 
 .container-sm {
     width: 80%;
+    margin: auto;
 }
 
 /******
@@ -60,12 +77,28 @@ utility
     clear: both;
 }
 
+.col-100 {
+    width: 100%;
+}
+
 .col-50 {
     width: 50%;
 }
 
+.col-30 {
+    width: 30%;
+}
+
 .p-relative {
     position: relative;
+}
+
+.mg-0-5 {
+    margin: 0 5%;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 /* * [class^="col"] {
@@ -77,5 +110,13 @@ site-header
 ***********/
 
 #site-header .col-50 {
+    float: left;
+}
+
+/********
+site-main
+*********/
+
+#site-main .col-30, #site-main .col-100{
     float: left;
 }
