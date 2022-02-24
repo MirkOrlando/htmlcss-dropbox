@@ -1,5 +1,81 @@
-*+ {
+/*****
+debug
+*****/
+
+.debug #site-header {
+    height: 100px;
+    background-color: red;
+}
+
+.debug #site-header .col-50 {
+    height: 100%;
+    background-color: yellow;    
+}
+
+.debug #site-header .nav-bar {
+    height: 100%;
+    width: 100%;
+}
+
+.debug #site-main .container-lg {
+    height: 80vh;
+    background-color: blue;
+}
+
+.debug #site-main .container-md {
+    height: 100%;
+    background-color: red;
+}
+
+/*****
+common
+******/
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container-lg {
+    min-width: 1440px;
+}
+
+.container-md {
+    width: 1200px;
+    margin: auto;
+}
+
+.container-sm {
+    width: 80%;
+}
+
+/******
+utility
+*******/
+
+.row {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.p-relative {
+    position: relative;
+}
+
+/* * [class^="col"] {
+    float: left;
+}*/
+
+/**********
+site-header
+***********/
+
+#site-header .col-50 {
+    float: left;
 }
