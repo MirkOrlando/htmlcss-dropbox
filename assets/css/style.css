@@ -27,6 +27,10 @@ debug
     background-color: red;
 }
 
+.debug #site-main .container-sm {
+    background-color: lightgreen;
+}
+
 .debug #site-main .text-business {
     height: 100px;
     background-color: aqua;
@@ -48,10 +52,21 @@ debug
 }
 
 .debug #site-main .business,
-.debug #site-main .partner {
+.debug #site-main .partner,
+.debug #site-main .actions,
+.debug #site-main .customers {
     padding: 10px 0;
 }
 
+.debug #site-main .actions .col-30 {
+    height: 50vh;
+    margin-bottom: 10px;
+    background-color: lightpink;
+}
+
+.debug #site-main .customers {
+    height: 300px;
+}
 
 /*****
 common
