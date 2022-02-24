@@ -128,9 +128,14 @@ a {
 ul {
     list-style: none;
 }
+
 img {
     max-width: 100%;
 }
+
+/* input {
+    color: -internal-light-dark(white, var(--primary));
+} */
 
 .container-md {
     width: 1050px;
@@ -175,6 +180,10 @@ utility
 
 .col-70 {
     width: 70%;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 
@@ -242,6 +251,10 @@ utility
 .z-i-1 {
     z-index: 1;
     position: relative;
+}
+
+.m-lf-10 {
+    margin-left: 10px;
 }
 
 /* * [class^="col"] {
@@ -315,6 +328,18 @@ site-main
     position: absolute;
     bottom: 0;
 }
+
+/* .business */
+
+.business {
+    padding-top: 4rem;
+}
+
+.business .billing {
+    font-size: 14px;
+    margin: 1.5rem 0 1rem;
+}
+
 
 
 /**********
