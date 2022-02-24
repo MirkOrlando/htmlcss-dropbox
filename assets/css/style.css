@@ -42,6 +42,17 @@ debug
     background-color: lightpink;
 }
 
+.debug #site-main .col-50 {
+    height: 500px;
+    background-color: lightpink;
+}
+
+.debug #site-main .business,
+.debug #site-main .partner {
+    padding: 10px 0;
+}
+
+
 /*****
 common
 ******/
@@ -117,6 +128,8 @@ site-header
 site-main
 *********/
 
-#site-main .col-30, #site-main .col-100{
+#site-main .col-30, 
+#site-main .col-100, 
+#site-main .col-50 {
     float: left;
 }
