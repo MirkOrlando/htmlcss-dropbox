@@ -130,7 +130,7 @@ ul {
 }
 
 .container-md {
-    width: 1200px;
+    width: 1050px;
     margin: auto;
 }
 
@@ -145,8 +145,8 @@ utility
 
 :root {
     --lighter: white;
-    --light: #0061FF;
-    --primary: #B4D0E7;
+    --primary: #0061FF;
+    --light: #B4D0E7;
     --darker: black;
     --font-family: 'Open Sans', sans-serif;
 }
@@ -201,8 +201,8 @@ utility
     border-bottom: 1px solid var(--lighter);
 }
 
-.p-1 {
-    padding: 1rem;
+.p-0-1 {
+    padding: 0 1rem;
 }
 
 .ta-right {
@@ -210,7 +210,7 @@ utility
 }
 
 .btn {
-    padding: 0.25rem 1rem;
+    padding: 0.35rem 1rem;
 }
 
 .btn.primary {
@@ -222,6 +222,10 @@ utility
     font-weight: bold;
 }
 
+.v-middle {
+    vertical-align: middle;
+}
+
 /* * [class^="col"] {
     float: left;
 }*/
@@ -229,6 +233,10 @@ utility
 /**********
 site-header
 ***********/
+
+#site-header {
+    font-size: 13px;
+}
 
 .menu, .menu > li {
     display: inline-block;
@@ -238,14 +246,47 @@ site-header
     padding: 0 2rem;
 }
 
-.nav-bar img {
-    height: 25px;
+nav.nav-bar {
+    height: 60px;
+    line-height: 60px;
 }
 
+#site-header .btn {
+    font-size: 11px;
+}
 
 /********
 site-main
 *********/
+
+/* .oneplace */
+
+.oneplace {
+    background-color: var(--light);
+    padding: 4rem 0;
+}
+
+.oneplace h1 {
+    font-size: 62px;
+}
+
+.text-oneplace, .text-oneplace .btn.primary {
+    width: 33%;
+    font-size: 14px;
+}
+
+.text-oneplace p.hero-text {
+    margin: 2rem 0 1.5rem;
+}
+
+.text-oneplace p.text {
+    margin-top: 0.75rem;
+}
+
+.downarrow {
+    font-size: 30px;
+    margin-top: 2rem;
+}
 
 
 /**********
