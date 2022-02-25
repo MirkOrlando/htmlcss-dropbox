@@ -146,6 +146,7 @@ utility
     --alternative: #61082B;
     --light: #DEDEE0;
     --font-family: 'Open Sans', sans-serif;
+    --linkclassic: #1F73FF;
 }
 
 .container-md {
@@ -185,6 +186,10 @@ utility
 
 .col-100 {
     width: 100%;
+}
+
+.col-94 {
+    width: 94%;
 }
 
 .col-90 {
@@ -227,6 +232,10 @@ utility
     width: 10%;
 }
 
+.col-6 {
+    width: 6%;
+}
+
 .p-relative {
     position: relative;
 }
@@ -249,6 +258,10 @@ utility
 
 .ta-right {
     text-align: right;
+}
+
+.ta-center {
+    text-align: center;
 }
 
 .btn {
@@ -285,6 +298,27 @@ ul.inline-list {
 
 ul.inline-list > li {
     display: inline-block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+.d-block {
+    display: block;
+}
+
+a.classic {
+    color: var(--linkclassic);
+    text-decoration: underline;
+}
+
+.bb-light {
+    border-bottom: 1px solid var(--light);
 }
 
 /* #region site-header */
@@ -397,14 +431,27 @@ nav.nav-bar {
 .business .condition {
     font-size: 12px;
     color: var(--paledark);
+    margin: 0.5rem 0 1rem;
 }
 
 .business .user,
 .business .memory,
-.business .funtion {
+.business .function {
     font-size: 12px;
+    padding-top: 1rem;
 }
 
+.business a.btn {
+    margin: 2rem 0 1.5rem;
+}
+
+.business.or {
+    padding-bottom: 1rem;
+}
+
+.business .check {
+    color: var(--primary);
+}
 
 /* #endregion .business */
 
