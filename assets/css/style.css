@@ -131,6 +131,10 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+    font-size: 22px;
+}
+
 /* #endregion common */
 
 /******
@@ -274,6 +278,11 @@ utility
     background-color: var(--primary);
 }
 
+.btn.darker {
+    color: var(--darker);
+    border: 1px solid var(--darker);
+}
+
 .bold {
     font-weight: bold;
 }
@@ -304,11 +313,11 @@ ul.inline-list > li {
     display: inline-block;
 }
 
-.fz-13 {
+.fs-13 {
     font-size: 13px;
 }
 
-.fz-12 {
+.fs-12 {
     font-size: 12px;
 }
 
@@ -334,6 +343,14 @@ a.classic {
 .mt-1 {
     margin-top: 2.25rem;
 } 
+
+.h-450 {
+    height: 450px;
+}
+
+.p-1-0 {
+    padding: 1rem 0;
+}
 
 /* #region site-header */
 
@@ -430,7 +447,6 @@ nav.nav-bar {
     border-left: 1px solid var(--light);
     border-right: 1px solid var(--light);
     border-bottom: 1px solid var(--light);
-    height: 450px;
 }
 
 
@@ -449,7 +465,7 @@ nav.nav-bar {
     margin: 0.5rem 0 1rem;
 }
 
-.business a.btn {
+.business .middle a.btn {
     margin: 2rem 0 1.5rem;
 }
 
@@ -457,7 +473,7 @@ nav.nav-bar {
     padding-bottom: 1.5rem;
 }
 
-.business h4 {
+.business .col-30 h4 {
     padding-top: 2rem;
 }
 
@@ -465,7 +481,24 @@ nav.nav-bar {
     color: var(--primary);
 }
 
+.business .bottom .col-70  h3 {
+    padding-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.business .bottom .col-70  p {
+    margin-top: 1.5rem   
+}
+
 /* #endregion .business */
+
+/* #region .partner */
+
+
+
+/* #endregion .business */
+
+
 
 /* #endregion site-main */
 
