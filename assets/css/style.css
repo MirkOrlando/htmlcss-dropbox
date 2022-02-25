@@ -1,6 +1,4 @@
-/*****
-debug
-*****/
+/* #region debug */
 
 .debug #site-header {
     height: 100px;
@@ -94,15 +92,15 @@ debug
     background-color: lightpink;
 }
 
+/* #endregion debug */
+
 /* colors 
 light: #0061FF;
 primary: #B4D0E7;
 */
 
 
-/*****
-common
-******/
+/* #region common */
 
 * {
     margin: 0;
@@ -110,9 +108,9 @@ common
     box-sizing: border-box;
 }
 
-/* body {
+body {
     min-width: 1440px;
-} */
+}
 
 #site-header,
 #site-main,
@@ -125,27 +123,15 @@ a {
     color: var(--darker);
 }
 
-ul {
-    list-style: none;
-}
-
 img {
     max-width: 100%;
 }
 
-/* input {
-    color: -internal-light-dark(white, var(--primary));
-} */
-
-.container-md {
-    width: 1050px;
-    margin: auto;
+h2 {
+    font-size: 35px;
 }
 
-.container-sm {
-    width: 80%;
-    margin: auto;
-}
+/* #endregion common */
 
 /******
 utility
@@ -154,42 +140,68 @@ utility
 :root {
     --lighter: white;
     --primary: #0061FF;
-    --light: #B4D0E7;
+    --secondary: #B4D0E7;
     --darker: black;
+    --paledark: #72818D;
+    --alternative: #61082B;
+    --light: #DEDEE0;
     --font-family: 'Open Sans', sans-serif;
 }
 
-.row {
+.container-md {
+    width: 1157px;
+    margin: auto;
+}
+
+.container-sm {
+    width: 80%;
+    margin: auto;
+}
+
+.row::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.col-30, 
-.col-100,
-.col-70, 
-.col-50,
-.col-40,
-.col-20 {
+/* input {
+    color: -internal-light-dark(white, var(--primary));
+} */
+
+[class^="col-"] {
     float: left;
 }
 
+/* .col-100,
+.col-70,
+.col-67,
+.col-50,
+.col-40,
+.col-33,
+.col-30,
+.col-20 {
+    float: left;
+} */
+
 .col-100 {
     width: 100%;
+}
+
+.col-90 {
+    width: 90%;
 }
 
 .col-70 {
     width: 70%;
 }
 
-h2 {
-    font-size: 30px;
+.col-67 {
+    width: 67%;
 }
 
-
-/* .col-60 {
+.col-60 {
     width: 60%;
-} */
+}
 
 .col-50 {
     width: 50%;
@@ -197,6 +209,10 @@ h2 {
 
 .col-40 {
     width: 40%;
+}
+
+.col-33 {
+    width: 33%;
 }
 
 .col-30 {
@@ -207,6 +223,10 @@ h2 {
     width: 20%;
 }
 
+.col-10 {
+    width: 10%;
+}
+
 .p-relative {
     position: relative;
 }
@@ -215,7 +235,7 @@ h2 {
     margin: 0 5%;
 }
 
-.w-100 {
+.row .w-100 {
     width: 100%;
 }
 
@@ -232,6 +252,7 @@ h2 {
 }
 
 .btn {
+    background-color: transparent;
     padding: 0.35rem 1rem;
 }
 
@@ -257,23 +278,22 @@ h2 {
     margin-left: 10px;
 }
 
-/* * [class^="col"] {
-    float: left;
-}*/
+ul.inline-list {
+    display: inline-block;
+    list-style: none;    
+}
 
-/**********
-site-header
-***********/
+ul.inline-list > li {
+    display: inline-block;
+}
+
+/* #region site-header */
 
 #site-header {
     font-size: 13px;
 }
 
-.menu, .menu > li {
-    display: inline-block;
-}
-
-.menu >li {
+.menu > li {
     padding: 0 2rem;
 }
 
@@ -286,19 +306,20 @@ nav.nav-bar {
     font-size: 11px;
 }
 
-/********
-site-main
-*********/
+/* #endregion site-header */
 
-/* .oneplace */
+/* #region site-main */
+
+/* #region oneplace */
 
 .oneplace {
+    height: 610px;
     background-color: var(--light);
     padding-top: 4rem;
 }
 
 .oneplace h1 {
-    font-size: 62px;
+    font-size: 68px;
 }
 
 .text-oneplace, .text-oneplace .btn.primary {
@@ -310,6 +331,7 @@ site-main
 }
 
 .text-oneplace p.hero-text {
+    padding-right: 115px;
     margin-bottom: 1.5rem;
 }
 
@@ -329,10 +351,12 @@ site-main
     bottom: 0;
 }
 
-/* .business */
+/* #endregion oneplace */
+
+/* #region .business */
 
 .business {
-    padding-top: 4rem;
+    padding-top: 10rem;
 }
 
 .business .billing {
@@ -340,6 +364,51 @@ site-main
     margin: 1.5rem 0 1rem;
 }
 
+.business .top {
+    border: 1px solid var(--light);
+    font-size: 14px;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.business .middle {
+    padding: 0rem 1.25rem;
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+}
+
+.business .middle {
+    padding: 0rem 1.25rem;
+    border-left: 1px solid var(--light);
+    border-right: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
+}
+
+
+.business .middle h3{
+    font-size: 22px;
+    margin: 1.75rem 0 0.75rem;
+}
+
+.business .price {
+    font-size: 14px;
+}
+
+.business .condition {
+    font-size: 12px;
+    color: var(--paledark);
+}
+
+.business .user,
+.business .memory,
+.business .funtion {
+    font-size: 12px;
+}
+
+
+/* #endregion .business */
+
+/* #endregion site-main */
 
 
 /**********

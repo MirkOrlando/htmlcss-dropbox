@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,10 +15,12 @@
     
     <header id="site-header">
 
-        <nav class="nav-bar row w-100">
+        <nav class="nav-bar row">
             <div class="col-50 p-0-1">
-                <img class="v-middle" src="./assets/img/logo-small.png" alt="">
-                <ul class="menu v-middle">
+                <a href="#">
+                    <img class="v-middle" src="./assets/img/logo-small.png" alt="">
+                </a>
+                <ul class="menu v-middle inline-list">
                     <li>
                         <a href="#">Perchè Dropbox?</a>
                     </li>
@@ -30,7 +33,7 @@
                 </ul>
             </div>
             <div class="col-50 ta-right p-0-1">
-                <ul class="menu v-middle">
+                <ul class="menu v-middle inline-list">
                     <li>
                         <a href="#">Supporto</a>
                     </li>
@@ -56,21 +59,22 @@
                 <h1>
                     Tutto ciò che ti serve per il lavoro, in un unico posto
                 </h1>
-                <div class="row w-100">
-                    <div class="col-30 text-oneplace">
+                <div class="row">
+                    <div class="col-40 text-oneplace">
                         <p class="hero-text">
                             Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                         </p>
                         <a href="#" class="btn primary">Inizia la tua prova gratuita</a>
                         <p class="text">Annulla in qualsiasi momento</p>
-                        <div class="downarrow">&#129139;</div>
-                    </div>
-                    <div class="col-70 image-oneplace z-i-1">
+                        <div class="downarrow">
+                            <i class="fa">&#xf063;</i>                    </div>
+                        </div>
+                    <div class="col-60 image-oneplace z-i-1">
                         <img src="./assets/img/jumbo.png" alt="">
                     </div>
                 </div>
             </div>
-            <div class="lighter w-100"></div>
+<!--             <div class="lighter w-100"></div> -->
         </section>
         <!-- /.oneplace -->
 
@@ -84,11 +88,49 @@
                         <input type="radio" class="m-lf-10"> Fatturazione annuale</input>
                     </div>
                 </div>
-                <div class="row w-100">
+                <div class="row">
                     <article class="col-30">
-                        <div class="category"></div>
+                        <div class="top">
+                            <i class="single fa">&#xf2c0;</i> Singolo
+                        </div>
+                        <div class="middle">
+                            <h3>Professional</h3>
+                            <strong class="price">19,99 €</strong>
+                            <div class="condition">/mese</div>
+                            <div class="row user">
+                                <div class="col-10">
+                                    <i class="fa">&#xf2c0;</i>
+                                </div>
+                                <div class="col-90">
+                                    1 utente
+                                </div>
+                            </div>
+                            <div class="row memory">
+                                <div class="col-10">
+                                    <i class="fa">&#xf114;</i>
+                                </div>
+                                <div class="col-90">
+                                    3 TB di spazioo di archiviazione sicuro
+                                </div>
+                            </div>
+                            <div class="row funtion">
+                                <div class="col-10">
+                                    <i class="fa">&#xf040;</i>
+                                </div>
+                                <div class="col-90">
+                                    Funzioni di produttività premium e condivisione semplice e sicura
+                                </div>
+                            </div>
+                        </div>
                     </article>
-                    <article class="col-30 mg-0-5"></article>
+                    <article class="col-30 mg-0-5">
+                        <div class="top">
+                            <span class="team">
+                                <i class="fa">&#xf0f7;</i>
+                            </span>
+                            Team
+                        </div>
+                    </article>
                     <article class="col-30"></article>
                     <article class="col-100"></article>
                 </div>
