@@ -141,9 +141,7 @@ h3 {
 
 /* #endregion common */
 
-/******
-utility
-*******/
+/* #region utility */
 
 :root {
     --lighter: white;
@@ -271,8 +269,8 @@ utility
     width: 100%;
 }
 
-.bb-1 {
-    border-bottom: 1px solid var(--dark);
+.bt-1 {
+    border-top: 1px solid var(--dark);
 }
 
 .p-0-1 {
@@ -394,6 +392,8 @@ a.classic {
 .p-relative {
     position: relative;
 }
+
+/* #endregion utility */
 
 /* #region site-header */
 
@@ -692,19 +692,21 @@ nav.nav-bar {
 
 /* #endregion .FAQ */
 
-
 /* #endregion site-main */
 
 /* #region site-footer */
 
 #site-footer {
     background-color: var(--darker);
-    color: var(--lighter);
+    color: var(--dark);
     margin-top: 4rem;
 }
 
+/* #region links */
+
 .links h4 {
     margin-bottom: 1rem;
+    color: var(--lighter);
 }
 
 .links li {
@@ -716,8 +718,18 @@ nav.nav-bar {
 }
 
 #site-footer .links {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
+
+/* #endregion links */
+
+/* #region language */
+
+#site-footer .language span {
+    padding: 2rem 0;
+}
+
+/* #endregion language */
 
 /* #endregion site-footer */
 
