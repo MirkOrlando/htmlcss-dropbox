@@ -426,7 +426,7 @@ nav.nav-bar {
 
 .oneplace {
     height: 610px;
-    background-color: var(--light);
+    background-color: var(--secondary);
     padding-top: 4rem;
 }
 
