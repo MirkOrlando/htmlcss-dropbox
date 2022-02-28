@@ -810,7 +810,31 @@ nav.nav-bar {
     border-bottom: 1px solid var(--bfaq);
 }
 
+/* #region accordion */
 
+.faq .fa.fa-angle-up {
+    display: none;
+}
+
+.faq .answer {
+    border: 1px solid var(--palesecondary);
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: justify;
+    display: none;
+}
+
+.accordion:hover .answer, .accordion:hover .fa.fa-angle-up {
+    display: block;
+}
+
+.accordion:hover .fa.fa-angle-down {
+    display: none;
+}
+
+
+
+/* #endregion accordion */
 
 /* #endregion .FAQ */
 
