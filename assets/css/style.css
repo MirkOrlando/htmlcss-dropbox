@@ -295,6 +295,10 @@ h3 {
     text-align: center;
 }
 
+.ta-left {
+    text-align: left;
+}
+
 .btn {
     background-color: transparent;
     padding: 0.35rem 1rem;
@@ -316,11 +320,6 @@ h3 {
 
 .v-middle {
     vertical-align: middle;
-}
-
-.z-i-1 {
-    z-index: 1;
-    position: relative;
 }
 
 .m-lf-10 {
@@ -403,6 +402,10 @@ a.classic {
     position: relative;
 }
 
+.r-0 {
+    right: 0;
+}
+
 /* #endregion utility */
 
 /* #region site-header */
@@ -432,6 +435,51 @@ nav.nav-bar {
 
 .dropdown {
     position: relative;
+}
+
+.dropdown-content .col-33 {
+    padding: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--palesecondary);
+    z-index: 3;
+    width: 550px;
+    font-size: 12px;
+    box-shadow: 12px 12px 16px 0 rgba(0,0,0,30%);
+    margin-top: -2px;
+}
+
+.dropdown-content {
+}
+
+.dropdown-content h4, .dropdown-content li {
+    line-height: 1rem;
+    padding: 0.25rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: var(--palesecondary);
+}
+
+.filter {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,30%);
+    z-index: 2;
+}
+
+.dropdown:hover #site-main .filter {
+    display: block;
 }
 
 /* .dropdown-content {
