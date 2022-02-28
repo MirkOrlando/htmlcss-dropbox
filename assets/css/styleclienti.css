@@ -342,8 +342,16 @@ ul.inline-list > li {
     font-size: 45px;
 }
 
+.fs-30 {
+    font-size: 30px;
+}
+
 .fs-22 {
     font-size: 22px;
+}
+
+.fs-20 {
+    font-size: 20px;
 }
 
 .fs-15 {
@@ -484,6 +492,23 @@ nav.nav-bar {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#site-main .statistics {
+    margin-top: 4rem;
+}
+
+#site-main .statistics h3, #site-main .statistics h4 {
+    margin-bottom: 1rem;
+}
+
+#site-main .statistics p {
+    color: var(--paledark);
+}
+
+#site-main .statistics .col-33 {
+    padding: 1.5rem;
+}
+
 
 /* #endregion site-main */
 
