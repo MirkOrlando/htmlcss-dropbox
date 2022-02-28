@@ -428,6 +428,19 @@ nav.nav-bar {
     padding-right: 2rem;
 }
 
+/* #region dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+/* .dropdown-content {
+
+} */
+
+
+/* #endregion dropdown */
+
 /* #endregion site-header */
 
 /* #region site-main */
